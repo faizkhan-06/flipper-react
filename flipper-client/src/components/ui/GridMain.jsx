@@ -42,7 +42,7 @@
 const GridMain = () => {
   return (
     <>
-      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-7 m-5 text-white">
+      <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-5 mt-7 m-5 text-white container">
         <div className="p-0.5 h-96 rounded-2xl bg-gray-900">
           <div className="h-full rounded-2xl bg-gray-950 flex items-center flex-col sm:m-auto hover:transform hover:scale-105 transition-transform duration-300 ease-in-out">
             <div className="w-96 p-4 rounded-lg">
