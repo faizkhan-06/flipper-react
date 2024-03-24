@@ -3,6 +3,7 @@ import { FaRegUser } from "react-icons/fa";
 import { useState } from "react";
 import { IoIosClose } from "react-icons/io";
 import { RiMenu2Line } from "react-icons/ri";
+import { NavLink } from "react-router-dom";
 const Navbar = () => {
   let [displayVal, setDisplayVal] = useState("none");
   let [icon, setIcon] = useState(<RiMenu2Line />);
@@ -22,16 +23,16 @@ const Navbar = () => {
           <div className="flex h-full w-auto items-center justify-center rounded-3xl bg-gray-900 text-sm">
             <ul className=" flex gap-16 justify-center flex-col xl:flex-row items-center">
               <li className="list-none border-b-2 border-transparent cursor-pointer transition duration-300 ease-in-out hover:border-b-white hover:border-solid hover:border-opacity-100 hover:text-md">
-                Home
+                <NavLink to="/">Home</NavLink>
               </li>
               <li className="list-none border-b-2 border-transparent cursor-pointer transition duration-300 ease-in-out hover:border-b-white hover:border-solid hover:border-opacity-100 hover:text-md">
-                Explore
+                <NavLink to="/">Explore</NavLink>
               </li>
               <li className="list-none border-b-2 border-transparent cursor-pointer transition duration-300 ease-in-out hover:border-b-white hover:border-solid hover:border-opacity-100 hover:text-md">
-                Channels
+                <NavLink to="/">Channels</NavLink>
               </li>
               <li className="list-none border-b-2 border-transparent cursor-pointer transition duration-300 ease-in-out hover:border-b-white hover:border-solid hover:border-opacity-100 hover:text-md">
-                Community
+                <NavLink to="/">Community</NavLink>
               </li>
             </ul>
           </div>

@@ -1,10 +1,10 @@
+import { Outlet } from "react-router-dom";
 import Navbar from "./components/nav/Navbar";
-import GridMain from "./components/ui/GridMain";
 function App() {
   return (
     <>
       <Navbar />
-      <GridMain />
+      <Outlet />
     </>
   );
 }
