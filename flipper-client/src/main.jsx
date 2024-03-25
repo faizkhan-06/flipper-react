@@ -5,6 +5,7 @@ import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import GridMain from "./components/ui/GridMain.jsx";
 import Video from "./components/Video/Video.jsx";
+import From from "./components/Form/From.jsx";
 
 const router = createBrowserRouter([
   {
@@ -15,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "/video",
         element: <Video />,
+      },
+      {
+        path: "/form",
+        element: <From />,
       },
     ],
   },
